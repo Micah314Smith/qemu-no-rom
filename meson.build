@@ -276,7 +276,7 @@ if targetos == 'windows'
 
   win = import('windows')
   version_res = win.compile_resources('version.rc',
-                                      depend_files: files('pc-bios/qemu-nsis.ico'),
+                                      depend_files: files('qemu-nsis.ico'),
                                       include_directories: include_directories('.'))
   host_dsosuf = '.dll'
 elif targetos == 'darwin'
@@ -2986,7 +2986,7 @@ foreach target : target_dirs
                win_subsystem: exe['win_subsystem'])
 
     if targetos == 'darwin'
-      icon = 'pc-bios/qemu.rsrc'
+      icon = 'qemu.rsrc'
       build_input = [emulator, files(icon)]
       install_input = [
         get_option('bindir') / exe_name,
@@ -3105,7 +3105,6 @@ endif
 
 subdir('scripts')
 subdir('tools')
-subdir('pc-bios')
 subdir('docs')
 subdir('tests')
 if gtk.found()

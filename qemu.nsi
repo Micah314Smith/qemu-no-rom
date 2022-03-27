@@ -68,9 +68,9 @@ RequestExecutionLevel admin
 ; Interface Settings.
 ;!define MUI_HEADERIMAGE "qemu-nsis.bmp"
 ; !define MUI_SPECIALBITMAP "qemu.bmp"
-!define MUI_ICON "${SRCDIR}\pc-bios\qemu-nsis.ico"
-!define MUI_UNICON "${SRCDIR}\pc-bios\qemu-nsis.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "${SRCDIR}\pc-bios\qemu-nsis.bmp"
+!define MUI_ICON "${SRCDIR}\qemu-nsis.ico"
+!define MUI_UNICON "${SRCDIR}\qemu-nsis.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "${SRCDIR}\qemu-nsis.bmp"
 ; !define MUI_HEADERIMAGE_BITMAP "qemu-install.bmp"
 ; !define MUI_HEADERIMAGE_UNBITMAP "qemu-uninstall.bmp"
 ; !define MUI_COMPONENTSPAGE_SMALLDESC

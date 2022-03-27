@@ -41,8 +41,6 @@ build-edk2:
  needs: ['docker-edk2']
  artifacts:
    paths: # 'artifacts.zip' will contains the following files:
-   - pc-bios/edk2*bz2
-   - pc-bios/edk2-licenses.txt
    - edk2-stdout.log
    - edk2-stderr.log
  image: $CI_REGISTRY_IMAGE:edk2-cross-build
